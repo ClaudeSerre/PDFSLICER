@@ -1,5 +1,6 @@
 import fitz  # Importer PyMuPDF
 
+## Modification 1 pour essai
 
 def split_pdf_into_a4_pages_with_uniform_margins(input_pdf_path, output_pdf_path):
     doc = fitz.open(input_pdf_path)
