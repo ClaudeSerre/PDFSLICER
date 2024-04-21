@@ -1,7 +1,5 @@
 import fitz  # Importer PyMuPDF
 
-## Modification 1 pour essai
-
 def split_pdf_into_a4_pages_with_uniform_margins(input_pdf_path, output_pdf_path):
     doc = fitz.open(input_pdf_path)
     page = doc[0]  # Charger la première page, supposant une seule grande page
@@ -37,8 +35,8 @@ def split_pdf_into_a4_pages_with_uniform_margins(input_pdf_path, output_pdf_path
     doc.close()
 
 # Chemin du PDF source et chemin du PDF de sortie
-input_pdf_path = "/Users/claude-emmanuelserre/Downloads/Rapport Plateforme ORLY.pdf"
-output_pdf_path = "/Users/claude-emmanuelserre/Downloads/PDFCUT8test1.pdf"
+input_pdf_path = "YOUR INPUT FILE PATH HERE"
+output_pdf_path = "YOUR OUTPUT FILE PATH HERE"
 
 # Exécuter la fonction pour découper le PDF en pages A4 avec des marges uniformes
 split_pdf_into_a4_pages_with_uniform_margins(input_pdf_path, output_pdf_path)
